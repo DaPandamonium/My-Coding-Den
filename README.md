@@ -24,7 +24,7 @@ This project has no prerequisites as it is a simple static website. All you need
 ### Installation
 
 1. Clone the repo
-   ```sh
+```sh
    git clone https://github.com/dapandamonium/My-Coding-Den.git
 ```
 ## Installation
