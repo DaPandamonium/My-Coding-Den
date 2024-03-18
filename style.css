@@ -352,3 +352,57 @@ input[name="projectCarousel"] {
     color: #333;
     font-size: 1rem;
 }
+
+
+span {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  span::after {
+    content: attr(data-detail);
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.6s, visibility 0.6s;
+  }
+  
+  span:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .hard-of-hearing::after {
+    content: "Navigating both the silent and sound-filled worlds has honed my ability to observe and appreciate the unspoken nuances in games and music. It's led me to advocate for more accessible technology and inclusive design in everything from multiplayer games to coding platforms.";
+  }
+  
+  .avid-gamer::after {
+    content: "From pixelated quests to sprawling open worlds, gaming is my portal to new realities. It's where I've battled dragons, built empires, and even programmed my first game. Each genre teaches me something new, mirroring the challenges and triumphs I encounter in coding.";
+  }
+  
+  .proud-nerd::after {
+    content: "Proudly diving into realms of fantasy and science fiction, I've found both escape and inspiration. My passion for stories that stretch the imagination fuels my creativity in coding, driving me to build my own worlds through lines of code.";
+  }
+  
+  .old-era-music::after {
+    content: "There's something timeless about the crackle of a vinyl record playing classics from decades past. This music connects me to a different era, influencing my creative process with its unique blend of sounds and storytelling techniques that I often mirror in my coding projects.";
+  }
+  
+  .snowboarding::after {
+    content: "Snowboarding is my adrenaline rush, a physical puzzle where each slope offers new challenges. It's about planning your line, adapting to the terrain, and sometimes, just going with the flow. It teaches me balance, focus, and the thrill of navigating the unpredictable—much like coding.";
+  }
+
+  .life-motto::after {
+    content: "Embrace the adventure of life with 'Ride' - feel the wind as you conquer roads and slopes. 'Drink' - savor the moments with friends over your favorite beverages. 'Play' - immerse yourself in games that challenge and excite you. 'Lime it' - chill out and relax, embracing the laid-back moments. It's all about balance and enjoying every aspect of life.";
+  }
+  
